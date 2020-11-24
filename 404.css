@@ -1,0 +1,46 @@
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .column {
+            float: left;
+            width: 33.33%;
+            height: 10%;
+            padding: 5px;
+        }
+
+        /* Clearfix (clear floats) */
+        .row::after {
+            content: "";
+            clear: both;
+            height: 10%;
+            display: table;
+        }
+
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th {
+            border: 2px solid #888888;
+            background-color: #eeeeee;
+            text-align: left;
+            text-decoration-color: aqua;
+            padding: 16px;
+        }
+
+        td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 16px;
+        }
+
+
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+   
